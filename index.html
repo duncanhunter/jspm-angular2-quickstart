@@ -1,9 +1,8 @@
 <html>
 
 <head>
-    <title>Angular 2 QuickStart</title>
+    <title>jspm-angular2-quickstart</title>
 
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.2/angular2-polyfills.min.js"></script>-->
     <script src="jspm_packages/system.js"></script>
     <script src="jspm.browser.js"></script>
     <script src="jspm.config.js"></script>
@@ -12,10 +11,10 @@
         System.import("src/shims")
             .then(function (){
                 return System.import('src/main.ts');
-            });				
+            });
     </script>
+    
 </head>
-
 
 <body>
     <my-app>Loading...</my-app>
