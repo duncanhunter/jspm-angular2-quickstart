@@ -1,0 +1,39 @@
+{
+  "main": "index.js",
+  "format": "cjs",
+  "meta": {
+    "*": {
+      "globals": {
+        "process": "process"
+      }
+    },
+    "*.json": {
+      "format": "json"
+    },
+    "mgf.js": {
+      "globals": {
+        "Buffer": "buffer/global"
+      }
+    },
+    "privateDecrypt.js": {
+      "globals": {
+        "Buffer": "buffer/global"
+      }
+    },
+    "publicEncrypt.js": {
+      "globals": {
+        "Buffer": "buffer/global"
+      }
+    },
+    "withPublic.js": {
+      "globals": {
+        "Buffer": "buffer/global"
+      }
+    }
+  },
+  "map": {
+    "./index.js": {
+      "browser": "./browser.js"
+    }
+  }
+}

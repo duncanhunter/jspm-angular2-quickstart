@@ -1,0 +1,30 @@
+{
+  "main": "index.js",
+  "format": "cjs",
+  "meta": {
+    "*": {
+      "globals": {
+        "process": "process"
+      }
+    },
+    "*.json": {
+      "format": "json"
+    },
+    "browser.js": {
+      "globals": {
+        "Buffer": "buffer/global"
+      }
+    },
+    "lib/dh.js": {
+      "globals": {
+        "Buffer": "buffer/global"
+      }
+    },
+    "lib/primes.json": true
+  },
+  "map": {
+    "./index.js": {
+      "browser": "./browser.js"
+    }
+  }
+}
